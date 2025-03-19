@@ -10,3 +10,6 @@ An object is a collection of key-value pairs, where keys are strings (also calle
 - They help you structure data in a meaningful way.
 - They support methods (functions inside objects) to manipulate data.
 
+## JS-Arrays
+
+An array in JavaScript is a special type of object that can hold multiple values in a single variable. It allows you to store, access, and manipulate collections of data efficiently.

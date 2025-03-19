@@ -125,3 +125,38 @@ function sum(...numbers) {
   return numbers.reduce((total, num)=> total+num, 0)
 }
 console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+/** template literals */
+const name = "subina";
+const age = "20";
+console.log(`My name is ${name} and I am ${age} years old`);
+
+/** ternary operator */
+const IsLoggedIn = true;
+const message = IsLoggedIn ? "welcome! user" : " please enter your correct credentials";
+console.log(message)
+
+/** arrow function */
+const getusername = (name) => {
+  console.log(`hi! ${name}`)
+};
+getusername("subina"); 
+
+/** short circuiting */
+const user = "";
+const username = user || "guest"
+console.log(username)
+
+/** Method Chaining */
+const users = ["subina", "ram", "shyam"];
+const capitalizedUsers = users.map(user => user.toUpperCase()).sort();
+
+/**asynchornous js */
+console.log("Loading...");
+setTimeout(() => console.log("Data loaded!"), 2000);
+
+/**promises(.then() & .catch()) handles api calls */
+fetch("https://jsonplaceholder.typicode.com/users/1")
+  .then(response => response.json())
+  .then(user => console.log(user))
+  .catch(error => console.log("Error:", error));
